@@ -14,6 +14,6 @@
 
 @keyframes transform {
   100% {
-    transform: rotate(-180deg);
+    transform: skewY(50deg);
   }
 }
