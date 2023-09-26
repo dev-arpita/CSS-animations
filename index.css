@@ -1,20 +1,26 @@
 .box {
-  width: 100px;
-  height: 100px;
+  width: 10px;
+  height: 10px;
   background: blue;
   border: 1px solid black;
-  animation: grow 1s ease 0s infinite alternate;
+  animation: supersize 2s ease-out 0s 4 alternate;
+  animation-fill-mode: both;
 }
 
-@keyframes grow {
-  from {
-    width: 100px;
-    height: 100px;
-    background: blue;
-  }
-  to {
+@keyframes supersize {
+  0% {
     width: 10px;
     height: 10px;
+    background: blue;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
     background: red;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    background: green;
   }
 }
