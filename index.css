@@ -3,7 +3,7 @@
 }
 
 .hover-text {
-  transition: all 0.5s;
+  transition: all 3s;
 }
 
 .hover-text:hover {
@@ -17,7 +17,7 @@
   height: 50px;
   background: red;
   border: 1px solid black;
-  animation: size-down ease-out 0.5s infinite alternate both;
+  animation: size-down cubic-bezier(1, 0, 1, 1) 0.5s 1 alternate both;
 }
 
 @keyframes size-down {
