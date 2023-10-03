@@ -1,19 +1,36 @@
-.box {
-  /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background: red;
-  border: 1px solid black;
-  animation-name: transform;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+body {
+  margin: 0;
+  background: #242423;
 }
 
-@keyframes transform {
-  100% {
-    transform: scale(0.5, 0.5) rotate(45deg) translate(50px, 0px);
+.box {
+  height: 30px;
+  width: 30px;
+  animation: move 2s ease-in-out 1s infinite alternate both;
+}
+
+.box-red {
+  background: #ff4d4d;
+  margin: 0;
+}
+
+.box-blue {
+  background: #738cff;
+  margin: 0;
+}
+
+.box-green {
+  background: #46ff36;
+  margin: 0;
+}
+
+.box-orange {
+  background: #ffaf24;
+  margin: 0;
+}
+
+@keyframes move {
+  to {
+    transform: translate(50vw, 50vh) scaleX(10) skewY(60deg);
   }
 }
